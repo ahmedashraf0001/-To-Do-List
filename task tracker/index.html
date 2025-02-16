@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="task-tracker-container">
+    <div class="task-tracker">
+        <div class="header-container">
+            <label id="title">Task Tracker</label>
+            <div class="search-header deactivate-searchheader">
+                <input type="text" class="header-searchbar deactivate-searchbar"  placeholder="Search for a task">
+                <button class="Search-btn" onclick="togglesearch()">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchbar">
+                <input type="text" placeholder="Start writing and press enter to create task" selected>
+                <button onclick="submitTask()">
+                    &#x21A9;
+                </button>
+            </div>
+            <div class="errormsg">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <p>Task is already saved!</p>
+            </div>
+        </div>
+        <div class="task-list">
+        </div>
+    </div>
+   </div>
+   <script src="javascript.js"></script>
+</body>
+</html>
